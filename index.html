@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.first-card {
+  background-color: transparent;
+  width: 222px;
+  height: 400px;
+  perspective: 1000px;
+  float:left;
+  transition: transform 2s;
+
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 222px;
+  height: 400px;
+  perspective: 1000px;
+  float: left;
+  margin: 0 1.5%;
+  transition: transform 2s;
+
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 2s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner, .flip-card:active .flip-card-inner  {
+  transform: rotateY(180deg);
+    transition: transform 0.6s;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.first-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  
+  
+  
+}
+.hide {
+  clear: both;
+  opacity:0%;
+  transition: opacity 100s; 
+
+
+}
+
+
+
+.flip-card:hover + .hide,  .flip-card:active + .hide{
+  opacity:100%;
+  color: black;
+  transition: opacity 2s; 
+}
+
+
+</style>
+</head>
+<body>
+
+<h1>Your February Tarot Prompt</h1>
+<h3>Hover over the card below to reveal your prompt:</h3>
+
+
+<div class="first-card">
+		<div class="first-card-front">
+			<img src="January.png" alt="BackSide" style="width:222px;height:400px;">
+		</div>
+	</div>
+
+
+<div class="flip-card">
+
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="Back.png" alt="BackSide" style="width:222px;height:400px;">
+
+    </div>
+    <div class="flip-card-back">
+		<img src="February.png" alt="FrontSide" style="width:222px;height:400px;">
+    </div>
+  </div>
+</div>
+<div class="hide"><br></br>The Lovers show us that we must make choices in how we show up in our relationships. That may be choosing between partners or putting a loved one's needs before our own. Every choice has consequences! Reversed this card can show us we are out of sync with ourselves and the world around us. This can be frustrating and lead to choices we may not usually make.<p><b>Challenge: You drew the upright Lovers. This time around, show your audience how difficult choices can be, and what you gain by choosing wisely.<b></p></div>
+
+
+	
+
+
+
+
+</body>
+</html>
